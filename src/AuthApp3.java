@@ -15,13 +15,10 @@ public class AuthApp3 {
 		boolean isLogined = false;
 		for(int i=0; i<users.length; i++) {
 			String[] current = users[i];
-			if(
-					current[0].equals(inputId) &&
-					current[1].equals(inputPass)
-			) {
-				isLogined = true;
-				break;
-			}
+			if(current[0].equals(inputId) && current[1].equals(inputPass))
+			 {isLogined = true;
+			 break;
+			 }
 		}
 		System.out.println("Hi,");
 		if(isLogined) {
